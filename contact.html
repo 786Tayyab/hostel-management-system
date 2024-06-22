@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect Boys Hostel johar town</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="image/img2.png" alt="image">
+                </a>
+                <!--   photo<span>pi</span>x  -->
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="index.html">About Us</a>
+                <a href="index.html">Gallery</a>
+                <div class="dropdown">
+                    <button class="dropbtn">More 
+                         <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="index.html">Facilities</a>
+                        <a href="index.html">Room Availability</a>
+                        <a href="index.html">Mess Menu</a>
+                        <a href="index.html">Review</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    
+   <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.0119686337711!2d74.26399246791473!3d31.440348931839807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919016a704121ff%3A0xc18d7c04eccefa22!2sBoys%20Hostel%20Johar%20Town!5e0!3m2!1sen!2s!4v1681468631604!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+   <section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Architecture Engineering Housing Society, near UCP.</h5>
+                    <P>Lahore</P>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+92 309 4324816</h5>
+                    <P>Lahore</P>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>ABC@gmail.com</h5>
+                    <P>Email us your query</P>
+                </span>
+            </div>
+        </div>
+    </div>
+   </section>
+   
+   <footer>
+    <div class="f-contact" data-aos="zoom-in-up" data-aos-offset="200">
+        <div class="m">
+            <h1>Informations</h1>
+            <p>
+                Excellent value for money, very friendly owner and staff, zone is particular.
+            </p>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-telegram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+        <div class="n">
+            <h1>Useful Links</h1>
+            <a href="index.html">Home</a>
+            <a href="index.html">About Us</a>
+            <a href="index.html">Gallery</a>
+            <a href="index.html">Facilities</a>
+            <a href="index.html">Room Availability</a>
+            <a href="index.html">Mess Menu</a>
+            <a href="index.html">Review</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+ 
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous">
+</script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript">
+    $('.portfolio-item').isotope
+        ({
+            // options
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+
+    $('.portfolio-menu ul li').click(function () {
+        $('.portfolio-menu ul li').removeClass('active');
+        $(this).addClass('active');
+
+        var selector = $(this).attr('data-filter');
+        $('.portfolio-item').isotope({
+            filter: selector
+        });
+        return false;
+    });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- -- -- -- -- -- -- --   javascrpt for three bar menu   -- -- -- -- -- ---->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+
+</body>
+
+</html>
